@@ -1,3 +1,7 @@
+/*
+ Brief drawing code developed in class
+ June 15
+ */
 public class Shapes {
     public static void main(String[] args) {
 
