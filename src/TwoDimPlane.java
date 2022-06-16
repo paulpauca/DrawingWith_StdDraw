@@ -1,9 +1,11 @@
+/*
+ Simple drawing of two quadratic functions in the 2-D plane.
+ June 15
+ */
 import java.util.ArrayList;
 
 public class TwoDimPlane {
     public static void main(String[] args) {
-        int n = 8;  // 8 x 8 grid
-
         // Window size in pixels
         StdDraw.setCanvasSize(500, 500);
         // Make the x and y axis go from -5.1 to 5.1
