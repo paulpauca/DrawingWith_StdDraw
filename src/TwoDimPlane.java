@@ -1,8 +1,7 @@
 /*
- Simple drawing of two quadratic functions in the 2-D plane.
+ Simple drawing of a quadratic function in the 2-D plane.
  June 15
  */
-import java.util.ArrayList;
 
 public class TwoDimPlane {
     public static void main(String[] args) {
@@ -29,24 +28,15 @@ public class TwoDimPlane {
         // Choose pen color red
         StdDraw.setPenColor(StdDraw.RED);
 
-        ArrayList<Double> xlist = new ArrayList<Double>();
-        ArrayList<Double> ylist = new ArrayList<Double>();
-
         double x, y;
         // Plot a quadratic function: y = x^2 - 4
         for (x = -4.5; x <= 4.5; x+=0.05) {
             y = x * x - 4;
-            xlist.add(x);
-            ylist.add(y);
             StdDraw.circle(x, y, 0.03);
         }
 
         // Choose pen color green
         StdDraw.setPenColor(StdDraw.GREEN);
 
-        // Shift the function by constant 3
-        for (int i = 0; i < xlist.size(); i++) {
-            StdDraw.circle(xlist.get(i), -(ylist.get(i) + 3), 0.03);
-        }
     }
 }
